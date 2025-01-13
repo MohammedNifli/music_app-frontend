@@ -19,7 +19,7 @@ const formatTime = (seconds: number): string => {
   return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
 };
 
-const MusicPlayer = () => {
+const MusicPlayer:React.FC = () => {
   const [playerState, setPlayerState] = React.useState<PlayerState>({
     isPlaying: false,
     progress: 0,
